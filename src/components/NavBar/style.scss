@@ -1,0 +1,17 @@
+.navbar--title {
+  color: #000;
+  font-weight: 700;
+  font-size: 20px;
+}
+.navbar--link {
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  transition: 0.2s;
+
+  &:hover {
+    color: #ff7900;
+    transform: scale(1.125);
+  }
+}

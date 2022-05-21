@@ -1,0 +1,137 @@
+$color-cicle: #5f5bca;
+
+.featured {
+  margin-top: 90px;
+  width: 100%;
+}
+
+.featured--left {
+  position: relative;
+  z-index: 1;
+  width: 50%;
+  & h1 {
+    color: #000000;
+    font-weight: 500;
+    font-size: 72px;
+  }
+
+  & span {
+    color: #29b06a;
+  }
+  & p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 62px;
+    flex-wrap: wrap;
+  }
+}
+
+.agency {
+  position: relative;
+  background-color: white;
+  width: 256.42px;
+  height: 80px;
+  margin-top: 35px;
+  transform: rotate(-15deg);
+  border: 4px solid $color-cicle;
+
+  & div {
+    width: 20.06px;
+    height: 20.06px;
+    background-color: $color-cicle;
+    border-radius: 50%;
+  }
+
+  & :nth-child(1) {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: $color-cicle;
+    border: 4px solid $color-cicle;
+    transform: rotate(-15deg);
+  }
+
+  & :nth-child(2) {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: $color-cicle;
+    border: 4px solid $color-cicle;
+    transform: rotate(-15deg);
+  }
+  & :nth-child(3) {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    background-color: $color-cicle;
+    border: 4px solid $color-cicle;
+    transform: rotate(-15deg);
+  }
+
+  & :nth-child(4) {
+    position: absolute;
+    bottom: -10px;
+    left: -10px;
+    background-color: $color-cicle;
+    border: 4px solid $color-cicle;
+    transform: rotate(-15deg);
+  }
+
+  & span {
+    color: $color-cicle;
+    font-size: 40px;
+    font-weight: 500;
+  }
+}
+
+.line-curve {
+  position: relative;
+  margin-left: 0;
+  margin-top: -15px;
+}
+
+.badge {
+  position: inherit;
+}
+
+.badge--percentent {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  width: 30px;
+  height: 15px;
+  left: 70px;
+  top: 110px;
+  padding: 10px 20px;
+  background-color: #29b029;
+  border-radius: 10px;
+  font-size: 12px;
+
+  &::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(4px) rotate(-45deg);
+    background-color: inherit;
+  }
+}
+
+.badge--progress-cicle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  left: 85px;
+  top: 148px;
+  background: #29b029;
+}
+
+.featured--right {
+  width: 50%;
+  // width: 50%;
+}

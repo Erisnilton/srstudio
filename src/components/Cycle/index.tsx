@@ -1,3 +1,4 @@
+import { ReactElement } from "react";
 import "./style.scss";
 
 interface CycleProps {
@@ -8,10 +9,11 @@ interface CycleProps {
   right?: number;
   bottom?: number;
   left?: number;
+  children?: ReactElement,
 }
 
 const Cycle: React.FunctionComponent<CycleProps> = (props) => {
-  const { color, size, position, top, bottom, right, left } = props;
+  const { children, color, size, position, top, bottom, right, left } = props;
   return (
     <div
       className="bg-cycle"
@@ -25,7 +27,9 @@ const Cycle: React.FunctionComponent<CycleProps> = (props) => {
         bottom: bottom,
         left: left,
       }}
-    ></div>
+    >
+      { children && children }
+    </div>
   );
 };
 

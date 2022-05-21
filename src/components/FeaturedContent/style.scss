@@ -1,7 +1,7 @@
 $color-cicle: #5f5bca;
 
 .featured {
-  margin-top: 90px;
+  margin-top: 70px;
   width: 100%;
 }
 
@@ -84,8 +84,6 @@ $color-cicle: #5f5bca;
   }
 }
 
-
-
 .line-curve {
   position: relative;
   margin-left: 0;
@@ -122,6 +120,25 @@ $color-cicle: #5f5bca;
     background-color: inherit;
   }
 }
+.cycle-1 {
+  position: absolute;
+  bottom: -32px;
+  right:-32px;
+  z-index: -1;
+}
+.cycle-2{
+  position: absolute;
+  z-index: -2;
+  top: -50px;
+  left: -100px;
+}
+
+.cycle-3 {
+  position: absolute;
+  z-index: -2;
+  bottom: -50px;
+  right: -100px;
+}
 
 .badge--progress-cicle {
   position: absolute;
@@ -135,5 +152,36 @@ $color-cicle: #5f5bca;
 
 .featured--right {
   width: 50%;
-  // width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 319px;
+  height: 494px;
+  background: #e5e9eb;
+  border-radius: 10px;
+  transform: rotate(8.55deg);
+  z-index: -1;
+}
+
+.image-model {
+  position: relative;
+  width: 319px;
+  height: 494px;
+  border: 3px solid #fff;
+  background-color: #e49f66;
+  box-shadow: inset -4px 4px 33px rgba(0, 0, 0, 0.25),
+    inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px 10px 0px 0px;
+  transform: rotate(-8.55deg) !important;
+
+  & img {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+  }
 }

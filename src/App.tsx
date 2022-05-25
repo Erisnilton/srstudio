@@ -5,7 +5,7 @@ import NavBar from './components/NavBar';
 function App() {
 
   return (
-    <div className="container  mt-2 ">
+    <div className="container mt-2 mb-2 ">
       <NavBar />
       <FeaturedContent/>
     </div>

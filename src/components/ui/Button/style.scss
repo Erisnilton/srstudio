@@ -7,4 +7,9 @@
   font-weight: 400;
   height: 40px;
   width: 120px;
+  transition: all .5s ease;
+
+  &:hover {
+    background-color: #dc6701;
+  }
 }

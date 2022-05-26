@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 78px 118px;
+  height: 590px;
+  background: linear-gradient(93.76deg, #c8e7d0 3.23%, #c6c0a6 98.45%);
+
+  & span {
+    font-weight: 500;
+    font-size: 54px;
+    color: #000000;
+  }
+
+  & p {
+    text-align: center;
+    width: 50%;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 88px;
+  }
+  &--content {
+      display: flex;
+      justify-content: space-around;
+
+    & h4 {
+      margin-top: 16px;
+      margin-bottom: 16px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    & span{
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}

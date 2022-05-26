@@ -1,10 +1,20 @@
 import badge from "../../asserts/01.svg";
+import coloborationIcon from "../../asserts/02.svg";
+import cardHello from "../../asserts/card-hello.svg";
+import dna from "../../asserts/dna.svg";
+import businessImage from "../../asserts/img/business-image.png";
+import imgCard from "../../asserts/img/img-1.png";
 import imageurl from "../../asserts/img/model.png";
 import profile1 from "../../asserts/img/profile-1.png";
 import profile2 from "../../asserts/img/profile-2.png";
 import profile3 from "../../asserts/img/profile-3.png";
 import Line from "../../asserts/line-curve.svg";
+import look from "../../asserts/looker.svg";
+import paint from "../../asserts/paint-1.svg";
 import star from "../../asserts/star.svg";
+import uxDesignIcon from "../../asserts/ux-design.svg";
+import Card from "../Card";
+import Badge from "../ui/Badge";
 import Button from "../ui/Button";
 import Input from "../ui/Input/Input";
 import "./style.scss";
@@ -17,32 +27,60 @@ const FeaturedContent: React.FunctionComponent<FeaturedContentProps> = (
   return (
     <>
       <div className="featured d-flex">
-        <div className="featured--left text-left">
+        <div className="text-left">
           <h1>
             A digital <br /> <span>Product </span>Design
           </h1>
-          <div className=" d-flex align-center justify-center agency">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <span> Agency </span>
-          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={562}
+            viewBox="0 0 562 216"
+          >
+            <g transform="rotate(-15, 79.69, 238.98)">
+              <rect
+                x="79.69"
+                y="81"
+                width="238.98"
+                height="87.22"
+                stroke="#5F5BCA"
+                strokeWidth="4"
+                fill="#FFF"
+              />
+              <text
+                x="100.69"
+                y="138"
+                fill="#5F5BCA"
+                fontFamily="Roboto"
+                fontSize="60"
+              >
+                Agency
+              </text>
+              <circle r="10.5" cx="79.69" cy="86" fill="#5F5BCA" />
+              <circle r="10.5" cx="318.2" cy="86" fill="#5F5BCA" />
+              <circle r="10.5" cx="79.69" cy="168" fill="#5F5BCA" />
+              <circle r="10.5" cx="318.2 " cy="168" fill="#5F5BCA" />
+            </g>
+          </svg>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere
             nunc augue cras curabitur amet. Bibendum ultrices sit eros, odio
             turpis congue.
           </p>
 
-          <div style={{ position: "relative" }}>
+          <div>
             <Input placehover="email Address">
               <Button>Notify Me</Button>
-              <svg className="cycle-1" width={78} height={78}>
-                <circle r="50%" cx="50%" cy="50%" fill={"#C4C4C4"} />{" "}
-              </svg>
             </Input>
+            <svg
+              style={{ position: "relative", top: "-50px", left: "-30px" }}
+              xmlns="http://www.w3.org/2000/svg"
+              width={629}
+              viewBox="0 0 629 78"
+            >
+              <circle r="39" cx="558" cy="39" fill={"#C4C4C4"} />
+            </svg>
           </div>
-          <div className="line-curve">
+          <div className="path">
             <div className="bagde d-flex align-center justify-center">
               <div className="badge--percentent">90%</div>
               <div className="badge--progress-cicle"></div>
@@ -50,7 +88,7 @@ const FeaturedContent: React.FunctionComponent<FeaturedContentProps> = (
             <img src={Line} alt="line curve" />
           </div>
         </div>
-        <div className="ml-7">
+        <div className="ml-2">
           <svg
             width={562}
             viewBox="0 0 562 681"
@@ -196,6 +234,106 @@ const FeaturedContent: React.FunctionComponent<FeaturedContentProps> = (
               </text>
             </g>
           </svg>
+        </div>
+      </div>
+      <div className="info d-flex">
+        <h1>We have dedicated designers on these</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+          massa viverra cursus ac pretium turpis. Ut in lorem volutpat sed dolor
+          dolor eu felis.
+        </p>
+      </div>
+
+      <div className="cards">
+        <svg width={429} viewBox="0 0 429 631">
+          <circle r="85" cx="85" cy="85" fill={"#FF7900"} />
+          <circle r="159" cx="270" cy="430  " fill={"#04625A"} />
+        </svg>
+        <div className="d-flex align-flex-start cards--contents">
+          <div>
+            <Card>
+              <img src={look} />
+              <Badge title="Visual Identity" color=" #B6FFFB" />
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                adipiscing elit.
+              </p>
+              <img
+                style={{ marginTop: "8px", marginBottom: "16px" }}
+                src={imgCard}
+              />
+              <p style={{ marginTop: "8px", marginBottom: "32px" }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </Card>
+          </div>
+          <Card>
+            <img src={paint} />
+            <Badge title="Website Design" color="#C9B6FF" />
+            <p style={{ marginTop: "16px", marginBottom: "32px" }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              adipiscing elit.
+            </p>
+
+            <span>Read More</span>
+          </Card>
+          <Card>
+            <img src={coloborationIcon} />
+            <Badge title="Collaboration" color="#FFEFB6" />
+            <p style={{ marginTop: "16px", marginBottom: "32px" }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              adipiscing elit.
+            </p>
+
+            <span>Read More</span>
+          </Card>
+          <Card>
+            <img src={uxDesignIcon} />
+            <Badge title="Collaboration" color="#B9FFB6" />
+            <p style={{ marginTop: "16px", marginBottom: "32px" }}>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              adipiscing elit.
+            </p>
+
+            <span>Read More</span>
+          </Card>
+        </div>
+      </div>
+      <div className="d-flex align-flex-start  business">
+        <div className="business--help">
+          <h1>How can SRstudio help your business?</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat neque
+            elementum nunc nunc. Etiam ridiculus libero lorem eget. Et morbi at
+            interdum sapien. Interdum malesuada hendrerit tincidunt placerat
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat neque
+            elementum nunc nunc. Etiam ridiculus libero lorem eget.
+          </p>
+          <Button>Learn More</Button>
+        </div>
+        <div className="business--image ml-7">
+          <img src={businessImage} alt="Image business" />
+        </div>
+      </div>
+
+      <div className="d-flex gap-10">
+        <img src={dna} />
+        <img src={cardHello} />
+        <div className="business--help">
+          <h1>Hello, we are SRstudio Creative</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat neque
+            elementum nunc nunc. Etiam ridiculus libero lorem eget. Et morbi at
+            interdum sapien. Interdum malesuada hendrerit tincidunt placerat
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat neque
+            elementum nunc nunc. Etiam ridiculus libero lorem eget.
+          </p>
+          <Button>Learn More</Button>
         </div>
       </div>
     </>

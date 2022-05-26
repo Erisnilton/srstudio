@@ -1,7 +1,7 @@
 :root {
-    --spacing-base: 0.5rem;
+    --spacing-base: 1rem;
 
-    @for $i from 0 to 8 {
+    @for $i from 0 to 12 {
         --spacing-#{$i}: calc(#{$i} * var(--spacing-base));
     }
 }
@@ -34,7 +34,7 @@
     @extend .my-auto, .mx-auto;
 }
 
-@for $i from 0 to 8 {
+@for $i from 0 to 12 {
 
    .mt-#{$i},
    .my-#{$i},
@@ -62,7 +62,7 @@
     
 }
 
-@for $i from 0 to 8 {
+@for $i from 0 to 12 {
     .pt-#{$i},
     .py-#{$i},
     .pa-#{$i}{
@@ -85,5 +85,11 @@
     .px-#{$i},
     .pa-#{$i} {
         padding-right: var(--spacing-#{$i}) !important;
+    }
+}
+
+@for $i from 0 to 12 {
+    .gap-#{$i} {
+        gap: var(--spacing-#{$i})  !important;
     }
 }

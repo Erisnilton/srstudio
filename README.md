@@ -26,5 +26,5 @@ O desafio consistiu em replicar o layout através de um exemplo no Figma.
 ## Links
 
 - demo: https://erisnilton.dev/srstudio/
-- github: https://github.com/Erisnilton/srstudio
+- github: https://github.com/erisnilton/srstudio
 - figma: https://www.figma.com/file/Nn9M5sII8qIXLqoNa7PHAO/Digital-Agency-Website-design-(Community)

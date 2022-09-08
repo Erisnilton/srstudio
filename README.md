@@ -1,6 +1,6 @@
 # SRstudio
 
-![landpage](src/asserts/img/landpage.png)
+![srstudio](src/asserts/img/srstudio.gif)
 
 > SRstudio é uma landpage que foi desenvolvida para fins de aprendizado profissional usando ReactJS e CSS3 (sem uso de bibioteca).
 
